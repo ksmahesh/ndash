@@ -5,7 +5,8 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "android": "$(which emulator) -avd Nexus_5_API_23",
-    "functional": "node_modules/.bin/mocha --timeout=130000 e2e/spec.spec.js"
+    "androidDetox": "node_modules/.bin/mocha --timeout=130000 e2e/spec.spec.js",
+    "iosDetox": "node_modules/.bin/mocha --timeout=130000 e2e/ios.spec.js"
   },
   "dependencies": {
     "art": "^0.10.1",
