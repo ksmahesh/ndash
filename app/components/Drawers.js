@@ -40,6 +40,7 @@ export default class Drawers extends Component {
 
     return (
       <View
+        testID="AppDrawer"
         style={stylesContainer}
         >
         {children}

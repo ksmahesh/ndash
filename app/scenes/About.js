@@ -12,10 +12,11 @@ export default class AboutScene extends Component {
       'reset',
       'press [ok] to reset all the data',
       [
-        {text: 'cancel'},
+        {text: 'cancel', testID:"cancelPopUpButton"},
         {
           text: 'ok',
-          onPress: this.props.onResetApp
+          onPress: this.props.onResetApp,
+          testID : "okPopUpButton"
         },
       ]
     );
@@ -32,11 +33,11 @@ export default class AboutScene extends Component {
         contentContainerStyle={styles.aboutContainer}
         >
 
-        <Text style={styles.aboutHeader}>
+        <Text style={styles.aboutHeader} testID= "aboutHeader">
           about
         </Text>
 
-        <Text style={styles.aboutParagraph}>
+        <Text style={styles.aboutParagraph} testID= "aboutText" >
           This application allows you to see what your public node modules are up to,
           and take a peek at other developers, you collaborate with.
         </Text>
@@ -99,6 +100,7 @@ export default class AboutScene extends Component {
         </Text>
 
         <TouchableOpacity
+            testID="resetAllDataButton"
             style={styles.aboutButton}
             onPress={this.resetApp.bind(this)}
           >

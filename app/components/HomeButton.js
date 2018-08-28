@@ -14,6 +14,7 @@ export default class HomeButton extends Component {
 
     return (
       <TouchableOpacity
+        testID='ndashButton'
         onPress={this.props.onAction}
         accessible={this.props.accessible}
         accessibilityLabel={this.props.accessibilityLabel}
