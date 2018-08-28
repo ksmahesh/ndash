@@ -16,9 +16,6 @@ npm install -g detox-cli
 echo "Installing dependencies for detox tests..."
 npm install
 
-echo "Building the project..."
-cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug && cd ..
-
 echo "Starting the packager"
 npm run start &
 
